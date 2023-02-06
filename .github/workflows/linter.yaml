@@ -13,3 +13,5 @@ jobs:
         uses: actions/checkout@v3
       - name: Run LookML Liniter
         uses: rbob86/lookml-linter@main
+      - name: Commit linter log file
+        uses: EndBug/add-and-commit@v9
