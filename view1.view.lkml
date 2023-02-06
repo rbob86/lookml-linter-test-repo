@@ -7,5 +7,6 @@ view: view1 {
 
   measure: test2 {
 
+
   }
 }
