@@ -4,4 +4,8 @@ view: view1 {
     sql: "test" ;;
     description: "test description"
   }
+
+  measure: test2 {
+
+  }
 }
