@@ -17,4 +17,5 @@ jobs:
       - name: Run LookML Liniter
         uses: rbob86/lookml-linter@main
       - name: Commit linter log file
+        if: success() || failure()
         uses: EndBug/add-and-commit@v9
