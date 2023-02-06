@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
       - name: Run LookML Liniter
         uses: rbob86/lookml-linter@main
       - name: Commit linter log file
