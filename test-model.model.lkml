@@ -1,4 +1,4 @@
 connection: "bigquery"
 
-# Views 2
+# Views 3
 include: "*.view.lkml"
