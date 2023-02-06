@@ -1,2 +1,5 @@
-./view1.view.lkml    error: view view1 - view_with_dimensions_and_measures_has_one_primary_key    warning: measure test2 - field_requires_description
-./test-model.model.lkml    No linting warnings/errors found.
+./view1.view.lkml
+    error: view view1 - view_with_dimensions_and_measures_has_one_primary_key
+    warning: measure test2 - field_requires_description
+./test-model.model.lkml
+    No linting warnings/errors found.
