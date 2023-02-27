@@ -1,7 +1,7 @@
 view: view1 {
   dimension: test {
     type: string
-    sql: "test" ;;
+    sql: "testm" ;;
     description: "test description aaab"
   }
 
