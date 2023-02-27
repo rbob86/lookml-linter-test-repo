@@ -23,7 +23,7 @@ jobs:
       - name: Run LookML Liniter
         uses: rbob86/lookml-linter@main
         with:
-          filesToLint: ${{ steps.changed-files.outputs.all_changed_files }}
+          filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
       - name: Commit linter log file
         if: success() || failure()
         uses: EndBug/add-and-commit@v9
