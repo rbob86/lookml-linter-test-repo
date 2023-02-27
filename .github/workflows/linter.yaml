@@ -19,6 +19,7 @@ jobs:
         uses: tj-actions/changed-files@v35
         with:
           files_ignore: .github
+          since_last_remote_commit: true
       - name: Run LookML Liniter
         uses: rbob86/lookml-linter@main
         with:
