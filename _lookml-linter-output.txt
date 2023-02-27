@@ -7,6 +7,8 @@
     warning: measure test2 - field_requires_description
 ./test-model.model.lkml
     warning: include *.view.lkml - include_should_not_have_views_with_wildcard
+./test/test4.view.lkml
+    warning: view test4 - view_requires_label
 ./test/test.view.lkml
     warning: view test - view_requires_label
     warning: view test - view_with_dimensions_and_measures_has_one_primary_key
