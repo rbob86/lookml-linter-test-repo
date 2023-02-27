@@ -1,3 +1,5 @@
+./test2.view.lkml
+    warning: view test2 - view_requires_label
 ./view1.view.lkml
     warning: view view1 - view_requires_label
     warning: view view1 - view_with_dimensions_and_measures_has_one_primary_key
