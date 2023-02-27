@@ -1,2 +1,5 @@
-./view1.view.lkml    No linting warnings/errors found.
-./test-model.model.lkml    No linting warnings/errors found.
+./view1.view.lkml
+    warning: view view1 - view_requires_label
+    error: view view1 - primary_key_is_first_dimension_in_view
+./test-model.model.lkml
+    warning: include *.view.lkml - include_should_not_have_views_with_wildcard
