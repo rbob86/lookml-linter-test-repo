@@ -1,6 +1,2 @@
-test-model.model.lkml
-    warning: include *.view.lkml - include_should_not_have_views_with_wildcard
 test2.view.lkml
     warning: view test2 - view_requires_label
-test2/test2a.view.lkml
-    warning: view test2a - view_requires_label
