@@ -1,4 +1,5 @@
 view: test {
+  #
   dimension: test {
     type: string
     sql: "test" ;;
