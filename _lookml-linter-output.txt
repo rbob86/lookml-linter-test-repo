@@ -1,4 +1,19 @@
-test2.view.lkml
+./test2.view.lkml
     warning: view test2 - view_requires_label
-test2/test2a.view.lkml
+./view1.view.lkml
+    warning: view view1 - view_requires_label
+    error: view view1 - primary_key_is_first_dimension_in_view
+    warning: measure test2 - field_requires_description
+./test-model.model.lkml
+    warning: include *.view.lkml - include_should_not_have_views_with_wildcard
+./test2/test2a.view.lkml
     warning: view test2aa - view_requires_label
+./test/test4.view.lkml
+    warning: view test4 - view_requires_label
+./test/test.view.lkml
+    warning: view test - view_requires_label
+    warning: view test - view_with_dimensions_and_measures_has_one_primary_key
+    error: view test - primary_key_is_first_dimension_in_view
+    warning: measure test2 - field_requires_description
+./test/test3.view.lkml
+    warning: view test3 - view_requires_label
