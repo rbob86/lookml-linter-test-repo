@@ -1,2 +1,6 @@
 test2.view.lkml
     warning: view test2 - view_requires_label
+view1.view.lkml
+    warning: view view1 - view_requires_label
+    error: view view1 - primary_key_is_first_dimension_in_view
+    warning: measure test2 - field_requires_description
