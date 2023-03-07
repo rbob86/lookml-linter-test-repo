@@ -28,5 +28,5 @@ jobs:
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
       - name: Commit linter log file
-        if: success() || failure()
+        if: github.event_name != 'pull_request' && (success() || failure())
         uses: EndBug/add-and-commit@v9
