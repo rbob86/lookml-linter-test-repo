@@ -1,9 +1,9 @@
 view: view1 {
   dimension: test {
-    primary_key: no
+    primary_key: yes
     type: string
-    sql: "testmmmmmxsxxssssssssss" ;;
-    description: "test description aaab"
+    sql: "test" ;;
+    description: "test description"
   }
 
   measure: test2 {
