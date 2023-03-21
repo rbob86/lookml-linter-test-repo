@@ -27,6 +27,7 @@ jobs:
         uses: rbob86/lookml-linter@main
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
+          saveOutputToFile: true
       - name: Commit linter log file
         if: github.event_name != 'pull_request' && (success() || failure())
         uses: EndBug/add-and-commit@v9
