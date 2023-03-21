@@ -2,7 +2,7 @@ view: view1 {
   dimension: test {
     primary_key: yes
     type: string
-    sql: "test22" ;;
+    sql: "test222" ;;
     description: "test description"
   }
 
