@@ -24,10 +24,15 @@ jobs:
           files_ignore: .github
           since_last_remote_commit: true
       - name: Run LookML Linter
+        id: lookml-linter
         uses: rbob86/lookml-linter@main
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
           saveOutputToFile: true
+      - uses: mshick/add-pr-comment@v2
+        with:
+          message: "${{ steps.lookml-linter.outputs.error_log }}"
+        if: github.event_name == 'pull_request'
       - name: Commit linter log file
         if: github.event_name != 'pull_request' && (success() || failure())
         uses: EndBug/add-and-commit@v9
