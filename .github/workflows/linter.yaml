@@ -28,7 +28,7 @@ jobs:
         uses: rbob86/lookml-linter@main
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
-          saveOutputToFile: true
+          saveOutputToFile: false
       - uses: mshick/add-pr-comment@v2
         with:
           message: "${{ steps.lookml-linter.outputs.error_log }}"
