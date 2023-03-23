@@ -25,7 +25,7 @@ jobs:
           since_last_remote_commit: true
       - name: Run LookML Linter
         id: lookml-linter
-        uses: rbob86/lookml-linter@main
+        uses: rbob86/lookml-linter@v8
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
           saveOutputToFile: false
