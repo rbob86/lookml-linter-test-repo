@@ -24,15 +24,10 @@ jobs:
           files_ignore: .github
           since_last_remote_commit: true
       - name: Run LookML Linter
-        id: lookml-linter
-        uses: rbob86/lookml-linter@main
+        uses: rbob86/lookml-linter@v5
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
           saveOutputToFile: false
-      - name: Use the value
-        id: step_two
-        run: |
-          echo "${{ env.error_log }}"
       - uses: mshick/add-pr-comment@v2
         with:
           message: "${{ env.error_log }}"
