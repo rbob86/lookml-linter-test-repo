@@ -31,7 +31,7 @@ jobs:
       - uses: mshick/add-pr-comment@v2
         with:
           message: "${{ env.error_log }}"
-        if: github.event_name == 'pull_request' && ${{ env.error_log != '' }}
+        if: github.event_name == 'pull_request' && env.error_log != ''
       - name: Commit linter log file
         if: github.event_name != 'pull_request' && (success() || failure())
         uses: EndBug/add-and-commit@v9
