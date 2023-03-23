@@ -29,6 +29,10 @@ jobs:
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
           saveOutputToFile: false
+      - name: Use the value
+        id: step_two
+        run: |
+          echo "${{ env.error_log }}"
       - name: Check outputs
         run: |
           echo "Outputs - ${{ steps.lookml-linter.outputs.error_log }}"
