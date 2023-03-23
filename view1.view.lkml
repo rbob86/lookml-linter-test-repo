@@ -3,7 +3,7 @@ view: view1 {
     primary_key: yes
     type: string
     sql: "test222" ;;
-    description: "test description"
+    description: "test description"#
   }
 
   measure: test2 {
