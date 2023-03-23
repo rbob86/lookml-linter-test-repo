@@ -38,7 +38,7 @@ jobs:
           echo "Outputs - ${{ steps.lookml-linter.outputs.error_log }}"
       - uses: mshick/add-pr-comment@v2
         with:
-          message: "test"
+          message: "${{ env.error_log }}"
         if: github.event_name == 'pull_request'
       - name: Commit linter log file
         if: github.event_name != 'pull_request' && (success() || failure())
