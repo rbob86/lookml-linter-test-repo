@@ -29,6 +29,9 @@ jobs:
         with:
           filepaths: ${{ steps.changed-files.outputs.all_changed_files }}
           saveOutputToFile: false
+      - name: Check outputs
+        run: |
+          echo "Outputs - ${{ steps.lookml-linter.outputs.error_log }}"
       - uses: mshick/add-pr-comment@v2
         with:
           message: "test"
